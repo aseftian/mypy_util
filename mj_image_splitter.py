@@ -19,10 +19,10 @@ def split_image(image_file):
         return top_left, top_right, bottom_left, bottom_right
 
 
-path = "/Users/ardisan/Documents/Microstock/01_AI_Generated/01_Preparation/abstract-stone-bg"
+path = "/Users/ardisan/Documents/Microstock/01_AI_Generated/00_MJ_Image_Pooler/Butuh Split"
 output_folder = f"{path}/output"
 dir_list = os.listdir(path)
-save_as_format = 'JPG'
+save_as_format = 'PNG'
 
 if not os.path.exists(output_folder):
   os.makedirs(output_folder)

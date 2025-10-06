@@ -25,7 +25,7 @@ def main(argv):
     if item.lower().endswith((".jpg", ".jpeg", "png")):
       old_pathname = f"{source_dir}/{item}"
       basename = os.path.splitext(item)
-      newname = basename[0].replace(f"{username}_", '')
+      newname = basename[0].replace(f"{username}", '')
       newname = re.sub("(_[0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}_)", "", newname).replace("_", " ")
       new_pathname = f"{source_dir}/{newname}{basename[1]}"
       os.rename(old_pathname, new_pathname)
